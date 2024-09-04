@@ -127,12 +127,12 @@ int VerificaArvoreValidade(Arvore *a, int data[]){
     
 }
 
-void ImprimeArvoreMedicamentos(Arvore *a){
+void ImprimeArvoreMedicamentos(Arvore *a,FILE *fp){
     if (a != NULL)
     {
-       ImprimeArvoreMedicamentos(a->esquerda);
+       ImprimeArvoreMedicamentos(a->esquerda,fp);
        printf("%s %d %.2f %d/%d/%d\n", a->m->nome, a->m->codigo, a->m->valor, 
                a->m->data[0], a->m->data[1], a->m->data[2]);
-        ImprimeArvoreMedicamentos(a->direita);
+        ImprimeArvoreMedicamentos(a->direita,fp);
     } 
 }

@@ -28,6 +28,6 @@ int VerificaArvoreMedicamento ( Arvore * a , int codigo );
 
 int VerificaArvoreValidade ( Arvore * a , int * data );
 
-void ImprimeArvoreMedicamentos ( Arvore * a );
+void ImprimeArvoreMedicamentos ( Arvore * a ,FILE *fp);
 
 #endif
