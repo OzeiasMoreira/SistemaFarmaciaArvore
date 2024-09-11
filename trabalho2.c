@@ -29,6 +29,7 @@ void lerArquivo(FILE *entrada, FILE *saida, Arvore *a) {
         
         } else if (strcmp(arquivo, "IMPRIME_ARVORE") == 0) {
             ImprimeArvoreMedicamentos(a,saida);
+            
         
         } else if (strcmp(arquivo, "ATUALIZA_PRECO") == 0) {
             int codigo;
